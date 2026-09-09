@@ -1,0 +1,189 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GovConnect | SIH Startup-Government Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     APP SHELL
+========================= -->
+
+<div id="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">
+                <span>G</span>
+            </div>
+
+            <div>
+                <h2>GovConnect</h2>
+                <small>SIH Prototype</small>
+            </div>
+        </div>
+
+        <div class="user-mini-card">
+            <div class="avatar" id="sidebarAvatar">G</div>
+
+            <div>
+                <strong id="sidebarUserName">Guest User</strong>
+                <span id="sidebarUserRole">Not Logged In</span>
+            </div>
+        </div>
+
+        <nav id="sidebarNav">
+
+            <!-- Dynamic navigation -->
+            <button class="nav-item active" data-page="landing">
+                <span>⌂</span>
+                Home
+            </button>
+
+            <button class="nav-item" data-page="login">
+                <span>↪</span>
+                Login
+            </button>
+
+            <button class="nav-item" data-page="startupRegister">
+                <span>＋</span>
+                Startup Registration
+            </button>
+
+            <button class="nav-item" data-page="governmentRegister">
+                <span>＋</span>
+                Government Registration
+            </button>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <span class="online-dot"></span>
+            Demo System Online
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div>
+                <div class="breadcrumb" id="breadcrumb">
+                    Home
+                </div>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-button" id="notificationBtn">
+                    🔔
+                    <span class="notification-count" id="notificationCount">0</span>
+                </button>
+
+                <div class="profile-dropdown">
+                    <button class="profile-button" id="profileButton">
+                        <div class="avatar small" id="topAvatar">G</div>
+
+                        <div class="profile-text">
+                            <strong id="topUserName">Guest</strong>
+                            <span id="topUserRole">Visitor</span>
+                        </div>
+
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="dropdown-menu" id="profileMenu">
+
+                        <button data-page="profile">
+                            👤 My Profile
+                        </button>
+
+                        <button id="logoutBtn">
+                            🚪 Logout
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <section class="page-container" id="pageContainer">
+            <!-- JavaScript renders pages here -->
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div class="toast-container" id="toastContainer"></div>
+
+
+<!-- =========================
+     MODAL
+========================= -->
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal" id="modal">
+
+        <div class="modal-header">
+            <div>
+                <h3 id="modalTitle">Modal</h3>
+                <p id="modalSubtitle"></p>
+            </div>
+
+            <button class="modal-close" id="modalClose">
+                ×
+            </button>
+        </div>
+
+        <div class="modal-body" id="modalBody">
+        </div>
+
+        <div class="modal-footer" id="modalFooter">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
