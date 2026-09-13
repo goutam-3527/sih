@@ -1173,12 +1173,7 @@ function landingPage() {
 
         </div>
 
-        <div class="alert alert-info" style="margin-top:18px;">
-            <strong>Prototype Notice:</strong>
-            External verification services are represented using
-            mock APIs in this SIH prototype. Production deployment
-            should connect only to authorized government APIs.
-        </div>
+       
 
     `;
 }
